@@ -3,7 +3,7 @@
 from sys import argv
 from calculator_1 import add, sub, mul, div
 
-if __name__=="__main__":
+if __name__ == "__main__":
     argc = len(argv)-1
     if argc != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -14,7 +14,7 @@ if __name__=="__main__":
     if operator == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
     elif operator == "-":
-        print("{} - {} = {}".format(a, b, add(a, b)))
+        print("{} - {} = {}".format(a, b, sub(a, b)))
     elif operator == "*":
         print("{} * {} = {}".format(a, b, mul(a, b)))
     elif operator == "/":
