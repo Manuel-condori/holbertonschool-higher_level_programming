@@ -2,6 +2,7 @@
 """Module that holds the class BaseGeometry
 """
 
+
 class BaseGeometry:
     """Class that defines a shape
     """
