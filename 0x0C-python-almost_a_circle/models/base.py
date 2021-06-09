@@ -23,4 +23,5 @@ class Base:
         """ returns JSON of a dictionary """
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        return json.dumps(list_dictionaries)
+        else:
+            return (json.dumps(list_dictionaries))
