@@ -58,6 +58,7 @@ class Square(Rectangle):
                     self.y = date
 
     def to_dictionary(self):
+        """ returns the dic representation of a Square """
         tmp = dict()
         tmp["id"] = self.id
         tmp["size"] = self.size
