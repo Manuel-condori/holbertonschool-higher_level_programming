@@ -31,7 +31,7 @@ class Square(Rectangle):
         self.typeChecker("height", value)
         self.valueWHChecker("height", value)
         self.height = value
-    
+
     def update(self, *args, **kwargs):
         """ the update method """
         if args is not None and len(args) > 0:
@@ -56,4 +56,3 @@ class Square(Rectangle):
                     self.x = date
                 elif key == "y":
                     self.y = date
-
