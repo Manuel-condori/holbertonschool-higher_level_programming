@@ -132,3 +132,13 @@ class Rectangle(Base):
                     self.x = date
                 elif key == "y":
                     self.y = date
+
+    def to_dictionary(self):
+        """ returns the dict representation of a rect """
+        temp = dict()
+        temp['id'] = self.id
+        temp['width'] = self.width
+        temp['height'] = self.height
+        temp['x'] = self.x
+        temp['y'] = self.y
+        return temp                    
