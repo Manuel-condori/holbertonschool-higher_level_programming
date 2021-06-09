@@ -141,4 +141,4 @@ class Rectangle(Base):
         temp['height'] = self.height
         temp['x'] = self.x
         temp['y'] = self.y
-        return temp                    
+        return temp
