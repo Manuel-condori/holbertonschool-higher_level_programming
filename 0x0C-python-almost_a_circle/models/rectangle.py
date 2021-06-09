@@ -2,6 +2,7 @@
 """class Rectangle thet inherits drom class Base"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """ class Rectangle inherits from Base """
 
@@ -12,7 +13,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
+
     def typeChecker(self, name, value):
         """ integer validation check """
         if type(value) is not int:
@@ -100,7 +101,7 @@ class Rectangle(Base):
             self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
-        """ the update function 
+        """ the update function
         Args:
             *args: multiple arguments
             **kwargs: dictionary arguments
