@@ -56,3 +56,11 @@ class Square(Rectangle):
                     self.x = date
                 elif key == "y":
                     self.y = date
+
+    def to_dictionary(self):
+        tmp = dict()
+        tmp["id"] = self.id
+        tmp["size"] = self.size
+        tmp["x"] = self.x
+        tmp["y"] = self.y
+        return tmp
