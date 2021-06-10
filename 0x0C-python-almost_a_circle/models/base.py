@@ -72,3 +72,17 @@ class Base:
             temp = cls(size=69)
         temp.update(**dictionary)
         return temp
+
+    @classmethod
+    def load_from_file(cls):
+        """ returns a list of instances """
+        temp = []
+        try:
+            with open("{}.json".format(
+                    cls.__name__), "r", encoding='utf-8') as f:
+                temp2 = cls.from_json_string(f.read())
+        except:
+            return list()
+        for i in temp2:
+            temp.append(cls.create(**i))
+        return temp
