@@ -1,4 +1,4 @@
---lists tables [id] [name]
+-- lists tables [id] [name]
 -- show all tables
 CREATE TABLE IF NOT EXISTS first_table (
     id INT,
